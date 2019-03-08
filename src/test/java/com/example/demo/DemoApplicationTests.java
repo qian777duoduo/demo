@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.servlet.ModelAndView;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -17,7 +18,7 @@ public class DemoApplicationTests {
 	@Test
 	public void contextLoads() {
 
-		String encryptString = "123456";
+		String encryptString = "3604300928li";
 		//需要加密的内容
 		String[] args = new String[3];
 		args[0] =  "input=" + encryptString;
@@ -25,6 +26,8 @@ public class DemoApplicationTests {
 		args[2] = "algorithm=PBEWithMD5AndDES";
 
 		JasyptPBEStringEncryptionCLI.main(args);
+
+		new ModelAndView();
 
 	}
 
