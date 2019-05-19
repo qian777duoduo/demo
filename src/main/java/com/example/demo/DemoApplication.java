@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-@SpringBootApplication(scanBasePackages={"com.example.*"} )
+@SpringBootApplication(scanBasePackages={"com.*"} )
 @MapperScan("com.example.demo.dao")
 public class DemoApplication {
 
